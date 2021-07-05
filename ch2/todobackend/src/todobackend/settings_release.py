@@ -7,6 +7,8 @@ DEBUG = True
 # Set secret key
 SECRET_KEY = os.environ.get('SECRET_KEY', SECRET_KEY)
 
+ALLOWED_HOSTS = ['http://'34.72.171.244:8000', 'localhost']
+
 # Must be explicitly specified when Debug is disabled
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '*').split(',')
 
